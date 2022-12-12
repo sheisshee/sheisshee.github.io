@@ -144,7 +144,18 @@ header.shadow {
 .btn:hover {
   background: var(--hover);
 }
- 
+.btn-center {
+  background: var(--main-color);
+  color: #fff;
+  justify-content: center;
+  padding: 0.5rem 1.3rem;
+  border-radius: 0.5rem;
+  margin-left: 35%;
+}
+
+.btn-center:hover {
+  background: var(--hover);
+}
 
 .about-container {
   display: grid;
@@ -280,16 +291,18 @@ span {
 .portfolio-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, auto));
-  gap: 1rem;
+  gap: 2rem;
   margin-top: 2rem;
 }
 .portfolio-img {
   overflow: hidden;
   border-radius: 0.5rem;
+ 
 }
 .portfolio-img img {
   width: 100%;
   display: block;
+  margin-bottom: 5%;
 }
 .portfolio-img img:hover {
   transform: scale(1.1);
