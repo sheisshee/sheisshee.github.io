@@ -102,9 +102,11 @@ header.shadow {
 }
 .home-img {
   order: 3;
+  margin-top: 20%;
 }
 .home-img img {
   width: 100%;
+  
 }
 .home-text span {
   font-size: var(--medium-font);
