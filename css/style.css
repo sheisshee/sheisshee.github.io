@@ -11,10 +11,10 @@
   font-family: "Poppins", sans-serif;
 }
 :root {
-  --main-color: #033a80;
-  --bg-color: #fff;
+  --main-color: #FFA07A;
+  --bg-color: 	#FFFACD;
   --text-color: #0f0c27;
-  --hover: hsl(260, 100%, 51%);
+  --hover: rgb(255,99,71);
  
   --big-font: 3.2rem;
   --medium-font: 1.8rem;
@@ -44,7 +44,7 @@ body {
  
 .heading span {
   font-size: var(--p-font);
-  color: rgb(2, 166, 70);
+  color: rgb(255,99,71);
 }
 header {
   position: fixed;
@@ -60,6 +60,7 @@ header {
   transition: 0.2s;
   box-shadow: -3px -3px 7px #ffffff73,
 				2px 2px 5px rgba(94, 104, 121, 0.288);
+  background-color:#F4A460;
 }
 header.shadow {
   box-shadow: 0 0 4px rgb(14 55 54 / 15%);
@@ -71,6 +72,7 @@ header.shadow {
 }
 .navbar {
   display: flex;
+  
 }
 .navbar a {
   font-size: 1rem;
@@ -80,7 +82,10 @@ header.shadow {
 }
 .navbar a:hover {
   color: var(--hover);
+  
 }
+
+
 #menu-icon {
   font-size: 24px;
   cursor: pointer;
@@ -342,7 +347,7 @@ form textarea {
 .contact-button {
   width: 160px;
   cursor: pointer;
-  background: #2768d9;
+  background: #FFA07A;
   color: #fff;
   justify-content: center;
   text-transform: uppercase;
