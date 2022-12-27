@@ -44,7 +44,7 @@ body {
  
 .heading span {
   font-size: var(--p-font);
-  color: rgb(255,99,71);
+  color: rgb(255,160,122);
 }
 header {
   position: fixed;
@@ -60,7 +60,7 @@ header {
   transition: 0.2s;
   box-shadow: -3px -3px 7px #ffffff73,
 				2px 2px 5px rgba(94, 104, 121, 0.288);
-  background-color:#F4A460;
+  background-color: #FFA07A;
 }
 header.shadow {
   box-shadow: 0 0 4px rgb(14 55 54 / 15%);
@@ -101,10 +101,43 @@ header.shadow {
   align-items: center;
   gap: 1rem;
 }
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
+}
+
+.home-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .home-img {
   order: 3;
   margin-top: 20%;
+  box-sizing: border-box;
+  border: 5px white solid;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
 }
+
+
 .home-img img {
   width: 100%;
   
