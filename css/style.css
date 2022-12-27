@@ -84,14 +84,17 @@ header.shadow {
   color: var(--hover);
   
 }
-
-
 #menu-icon {
   font-size: 24px;
   cursor: pointer;
   z-index: 10001;
   display: none;
 }
+#darkmode {
+  font-size: 22px;
+  cursor: pointer;
+}
+
 .home {
   position: relative;
   width: 100%;
@@ -156,7 +159,6 @@ header.shadow {
   position: relative;
   display: inline-block;
   font-size: 40px;
-  color: rgb(12, 12, 12);
   text-transform: uppercase;
   animation: flip 2s infinite;
   animation-delay: calc(.2s * var(--i))
